@@ -19,15 +19,15 @@ Bộ multi-agent dùng lại cho [Claude Code](https://claude.com/claude-code), 
 Cách 1, plugin (khuyên dùng):
 
 ```
-/plugin marketplace add YOUR_GITHUB_USER/multi-agent-kit
+/plugin marketplace add phamhoang98/repo_agent
 /plugin install multi-agent-kit@multi-agent-kit
 ```
 
 Cách 2, script:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USER/multi-agent-kit.git
-./multi-agent-kit/scripts/install.sh --profile mobile --with-hooks /duong/dan/du-an
+git clone https://github.com/phamhoang98/repo_agent.git
+./repo_agent/scripts/install.sh --profile mobile --with-hooks /duong/dan/du-an
 ```
 
 Profile: `core`, `web`, `mobile`, `all`. Thêm `--user` để cài cho mọi dự án, `--uninstall` để gỡ, `--dry-run` để xem trước.

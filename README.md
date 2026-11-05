@@ -41,7 +41,7 @@ Read-only agents (`reviewer`, `security-auditor`, `accessibility-auditor`, `rese
 ### Option 1: plugin (recommended)
 
 ```
-/plugin marketplace add YOUR_GITHUB_USER/multi-agent-kit
+/plugin marketplace add phamhoang98/repo_agent
 /plugin install multi-agent-kit@multi-agent-kit
 ```
 
@@ -50,8 +50,8 @@ Update later with `/plugin marketplace update multi-agent-kit`. As a plugin, nam
 ### Option 2: install script
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USER/multi-agent-kit.git
-./multi-agent-kit/scripts/install.sh --profile web --with-hooks /path/to/project
+git clone https://github.com/phamhoang98/repo_agent.git
+./repo_agent/scripts/install.sh --profile web --with-hooks /path/to/project
 ```
 
 | Flag | Meaning |

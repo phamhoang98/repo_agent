@@ -3,8 +3,8 @@
   "displayName": "Multi-Agent Kit",
   "version": "0.2.0",
   "description": "Reusable multi-agent toolkit for web and mobile projects: 15 specialist subagents, orchestration skills (/feature, /bugfix, /review, /research), release checklists, and safety hooks.",
-  "author": { "name": "YOUR_NAME" },
-  "repository": "https://github.com/YOUR_GITHUB_USER/multi-agent-kit",
+  "author": { "name": "phamhoang98" },
+  "repository": "https://github.com/phamhoang98/repo_agent",
   "license": "MIT",
   "keywords": ["agents", "subagents", "multi-agent", "web", "mobile", "react-native", "flutter", "workflow"]
 }
