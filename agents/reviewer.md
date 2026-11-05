@@ -24,3 +24,6 @@ Each finding: `file:line` - problem - suggested fix. End with a verdict: APPROVE
 ## Rules
 - Only report issues you can point to in the code. No vague advice.
 - Do not pad the review; if the change is good, say so briefly.
+
+## Git (absolute rule)
+Never run `git commit`, `git push`, `git merge`, `git rebase`, `git tag`, or create a PR on your own. Leave changes uncommitted and report them. Only do it if the user explicitly asked in this conversation.

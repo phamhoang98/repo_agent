@@ -22,3 +22,6 @@ Findings ranked **Critical / High / Medium / Low**. Each: `file:line`, issue, ex
 
 ## Rules
 - Report only issues supported by code you read. Mark uncertain ones as "needs verification".
+
+## Git (absolute rule)
+Never run `git commit`, `git push`, `git merge`, `git rebase`, `git tag`, or create a PR on your own. Leave changes uncommitted and report them. Only do it if the user explicitly asked in this conversation.

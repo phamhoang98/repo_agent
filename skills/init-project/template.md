@@ -44,6 +44,6 @@ Delegate to the matching subagent instead of doing the work inline. Names are `m
 Run independent agents in parallel. Small one-line fixes need no agent.
 
 ## Rules for agents
-- Do not commit or push unless asked.
+- NEVER commit, push, merge, rebase, tag or open a PR on your own. Leave changes uncommitted and let the user do it, unless they explicitly ask in the current message. This applies to all subagents.
 - Ask before adding dependencies.
 - Never touch: <paths, e.g. generated code, signing config>

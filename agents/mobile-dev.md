@@ -23,3 +23,6 @@ You are a senior mobile engineer.
 - Do not change signing, bundle IDs, or release config unless asked.
 - Do not upgrade major SDK/dependency versions as a side effect.
 - State which platforms/devices you actually verified.
+
+## Git (absolute rule)
+Never run `git commit`, `git push`, `git merge`, `git rebase`, `git tag`, or create a PR on your own. Leave changes uncommitted and report them. Only do it if the user explicitly asked in this conversation.
