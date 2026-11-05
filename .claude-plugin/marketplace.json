@@ -1,0 +1,14 @@
+{
+  "name": "multi-agent-kit",
+  "owner": { "name": "YOUR_NAME" },
+  "metadata": {
+    "description": "Multi-agent toolkit for Claude Code: web and mobile specialists, orchestration skills and safety hooks."
+  },
+  "plugins": [
+    {
+      "name": "multi-agent-kit",
+      "source": "./",
+      "description": "Multi-agent toolkit for web and mobile projects."
+    }
+  ]
+}

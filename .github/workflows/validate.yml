@@ -1,0 +1,28 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate agents, skills, hooks, manifests
+        run: python3 scripts/validate.py
+      - name: Test hook scripts
+        run: python3 scripts/test_hooks.py
+      - name: Shellcheck installer
+        run: shellcheck scripts/install.sh
+      - name: Test installer (all profiles, hooks, uninstall)
+        run: |
+          for p in core web mobile all; do
+            d=$(mktemp -d); ./scripts/install.sh --profile "$p" --with-hooks "$d" >/dev/null
+            test -f "$d/.claude/settings.json"
+            ./scripts/install.sh --uninstall "$d" >/dev/null
+            test -z "$(ls -A "$d/.claude/agents")"
+          done
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Official plugin validation
+        run: |
+          npx -y @anthropic-ai/claude-code plugin validate .
+          npx -y @anthropic-ai/claude-code plugin validate .claude-plugin/plugin.json
